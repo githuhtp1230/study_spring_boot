@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/buoi2
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  jwt:
+    signerKey: "ygyhf6r46nP+Wyb8wSLm+ppTdDqIymHELy9om7yBnqLCM85+is2kbuvrNgeb4se6"
